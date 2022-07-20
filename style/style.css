@@ -189,6 +189,7 @@ body {
 
 /* footer start */
 footer {
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -238,17 +239,22 @@ footer hr {
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* mobile */
-@media only screen and (max-width:767px) {}
+@media only screen and (max-width:767px) {
+    .view_all {
+        display: none;
+    }
+}
 
 /* tablet */
 @media only screen and (min-width:768px) and (max-width:1023px) {
     .banner {
-        width: 750px;
-        /* height: 500px; */
+        width: 810px;
+        margin: 50px auto 70px;
     }
 
     .banner_text {
-        width: 300px;
+        width: 330px;
+        margin: 0 24px 60px 75px;
     }
 
     .banner_text h2 {
@@ -261,8 +267,13 @@ footer hr {
     .banner_text p {
         font-weight: 400;
         font-size: 14px;
-        line-height: 20px;
+        line-height: 25px;
         margin: 20px 0 30px;
+    }
+
+
+    .banner_tab {
+        /* display: none; */
     }
 
     .banner_text a {
@@ -274,19 +285,22 @@ footer hr {
     }
 
     .banner_image {
-        width: 310px;
+        width: 340px;
 
         /* margin: 0 106px 0 0; */
     }
 
     .blogs {
+        margin: 0 auto;
         flex-direction: column;
         grid-template-columns: repeat(2, 1fr);
-        width: 720px;
+        width: 810px;
+
+        /* column-gap: 24px; */
     }
 
     .left_button {
-        width: 720px;
+        width: 810px;
         column-gap: 22px;
         flex-direction: row;
         row-gap: 30px;
@@ -297,12 +311,22 @@ footer hr {
     }
 
     .right_blogs {
-        width: 750px;
+        width: 810px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
     }
+
+    footer {
+        height: 340px;
+    }
+
+    .footer_link {}
 }
 
 /* desktop */
-@media only screen and (min-width:1024px) {}
+@media only screen and (min-width:1024px) {
+    .view_all {
+        display: none;
+    }
+}
