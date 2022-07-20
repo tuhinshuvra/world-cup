@@ -73,6 +73,7 @@ body {
     justify-content: space-between;
     column-gap: 24px;
     width: 1200px;
+    margin-bottom: 80px;
 }
 
 .left_button {
@@ -228,6 +229,18 @@ footer hr {
     color: #B9B9B9;
 }
 
+.social_icon .fa-brands {
+    padding: 10px;
+    margin: 15px;
+    border-radius: 50px;
+    background-color: white;
+    font-size: 29px;
+}
+
+.social_icon a {
+    color: black;
+}
+
 /* footer end */
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -330,7 +343,7 @@ footer hr {
     }
 
     footer {
-        height: 425px;
+        height: 500px;
     }
 
     .footer_link {
@@ -340,6 +353,10 @@ footer hr {
 
     .footer_link a {
         margin-bottom: 15px;
+    }
+
+    footer hr {
+        margin: 20px 50px;
     }
 }
 
