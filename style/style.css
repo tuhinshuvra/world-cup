@@ -17,14 +17,14 @@ body {
     /* justify-content: space-between; */
     /* justify-content: center; */
     /* align-items: center; */
-    width: 1321px;
+    width: 1200px;
     background: #161616;
     border-radius: 30px;
 }
 
 .banner_text {
-    width: 531px;
-    margin: 111px 24px 111px 106px;
+    width: 480px;
+    margin: 0 24px 111px 106px;
 }
 
 .banner_text h2 {
@@ -45,7 +45,7 @@ body {
 
 .banner_text a {
     text-decoration: none;
-    padding: 16px 45px;
+    padding: 12px 27px;
     /* height: ; */
 
     /* left: 246px; */
@@ -62,7 +62,7 @@ body {
 .banner_text a {}
 
 .banner_image {
-    width: 581px;
+    width: 530px;
     margin: 33px 106px 0 0;
 }
 
