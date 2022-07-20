@@ -114,11 +114,18 @@ body {
 
 .right_blogs {
     width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
 
 .single_blog {
     display: flex;
     flex-direction: column;
+}
+
+.single_blog img {
+    width: 100%;
 }
 
 .blog_details {
