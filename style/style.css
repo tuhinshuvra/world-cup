@@ -59,8 +59,6 @@ body {
     color: #FFFFFF;
 }
 
-.banner_text a {}
-
 .banner_image {
     width: 530px;
     margin: 33px 106px 0 0;
@@ -90,9 +88,6 @@ body {
 
     width: 300px;
     height: 312px;
-    /* left: 140px; */
-    /* top: 826px; */
-
     background: #161616;
     border-radius: 10px;
 }
@@ -157,8 +152,6 @@ body {
     align-items: center;
     width: 100px;
     height: 32px;
-    /* left: 832px; */
-    /* top: 1407px; */
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -170,7 +163,6 @@ body {
 
 .left_button .b_selected {
     background: #DD0000;
-    /* border-radius: 10px; */
     color: white;
 }
 
@@ -252,18 +244,50 @@ footer hr {
 @media only screen and (min-width:768px) and (max-width:1023px) {
     .banner {
         width: 750px;
+        /* height: 500px; */
+    }
+
+    .banner_text {
+        width: 300px;
+    }
+
+    .banner_text h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 0;
+    }
+
+    .banner_text p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 20px 0 30px;
+    }
+
+    .banner_text a {
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .banner_image {
+        width: 310px;
+
+        /* margin: 0 106px 0 0; */
     }
 
     .blogs {
         flex-direction: column;
         grid-template-columns: repeat(2, 1fr);
-        width: 750px;
+        width: 720px;
     }
 
     .left_button {
-        width: 750px;
+        width: 720px;
         column-gap: 22px;
-
         flex-direction: row;
         row-gap: 30px;
         margin-bottom: 30px;
