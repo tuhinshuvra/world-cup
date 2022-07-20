@@ -88,7 +88,7 @@ body {
     align-items: center;
     row-gap: 30px;
 
-    width: 312px;
+    width: 300px;
     height: 312px;
     /* left: 140px; */
     /* top: 826px; */
@@ -113,7 +113,8 @@ body {
 }
 
 .right_blogs {
-    width: 75%;
+    width: calc(100% - 300px);
+    /* width: 75%; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
