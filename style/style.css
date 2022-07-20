@@ -41,7 +41,7 @@ body {
     font-size: 16px;
     line-height: 26px;
     color: #FFFFFF;
-    margin: 0 0 30px 0;
+    margin: 0;
 }
 
 .banner_text a {
@@ -252,9 +252,30 @@ footer hr {
 
 /* footer end */
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        Media query break point 
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* animation start */
+.simple_ani {
+    width: 100px;
+
+    border-radius: 50%;
+    position: relative;
+    animation: mymove 10s infinite;
+}
+
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 120px;
+    }
+}
+
+/* animation end */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   Media query break point 
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* mobile */
 @media only screen and (max-width:767px) {
@@ -300,26 +321,20 @@ footer hr {
     }
 
     .banner_text a {
-        /* text-decoration: none; */
         padding: 12px 27px;
-        /* background: #DD0000; */
-        /* border-radius: 5px; */
         font-weight: 400;
         font-size: 20px;
-        /* text-align: center; */
-        /* color: #FFFFFF; */
         margin-left: 40px;
     }
 
     .banner_image {
-        width: 375px;
-        /* margin: 33px 106px 0 0; */
+        width: 300px;
         margin: 0 auto;
     }
 
     .banner_image img {
         width: 100%;
-        margin-top: 21px;
+        margin-top: -10px;
     }
 
     .blogs {
@@ -348,7 +363,6 @@ footer hr {
         width: 375px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        /* gap: 24px; */
     }
 
     footer {
@@ -393,13 +407,8 @@ footer hr {
         font-weight: 400;
         font-size: 14px;
         line-height: 25px;
-        margin: 20px 0 30px;
+        margin: 20px 0 0px;
         color: rgba(255, 255, 255, 0.8);
-    }
-
-
-    .banner_tab {
-        /* display: none; */
     }
 
     .banner_text a {
@@ -412,8 +421,6 @@ footer hr {
 
     .banner_image {
         width: 340px;
-
-        /* margin: 0 106px 0 0; */
     }
 
     .blogs {
@@ -421,8 +428,6 @@ footer hr {
         flex-direction: column;
         grid-template-columns: repeat(2, 1fr);
         width: 810px;
-
-        /* column-gap: 24px; */
     }
 
     .left_button {
